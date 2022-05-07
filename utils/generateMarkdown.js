@@ -40,11 +40,16 @@ const renderLicenseSection = (license) => {
 function generateMarkdown(data) {
   return `# ${data.projectTitle}
   ${renderLicenseSection(data.license)}
-  [Description](#description)\
-  [Installation](#installation)\
-  [Usage](#usage)\
-  [Test Information](#testinformation)\
-  [Contact](#contact)
+
+* [Description](#description)
+
+* [Installation](#installation)
+
+* [Usage](#usage)
+
+* [Test Information](#testinformation)
+
+* [Contact](#contact)
 
 ### Description
 ${data.description}
